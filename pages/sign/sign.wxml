@@ -1,0 +1,28 @@
+<!--pages/sign/sign.wxml-->
+<view class="container">
+    <view class='cell'>
+        <text class='cellTitle'>活动名称：</text>
+        <text class="cellContent">{{introduce.p_title}}</text> 
+    </view>
+    <view class='cell'>
+        <text class='cellTitle'>活动地址：</text>
+        <text class="cellContent">{{introduce.p_address}}</text>         
+    </view>
+    <view class='cell activityTime'>
+        <text class='cellTitle'>活动时间：</text>
+        <text class="cellContent">{{introduce.p_time}}</text> 
+    </view>
+    <view class="cell">
+        <text class='cellTitle'>报名人姓名：</text>
+        <text class="cellContent signName">{{name}}</text>
+    </view>
+    <view class='cell'>
+        <text class='cellTitle'>报名人联系方式：</text>
+        <text class="cellContent signTel">{{phone}}</text> 
+        <text class='wanshan' bindtap="geren">去个人中心?</text>
+    </view>
+    <navigator url="../signresult/signresult?pid={{introduce.pid}}" open-type="redirect">
+        <button disabled='{{!name}}' size="default" class="comfirmSign">确认报名</button>
+    </navigator> 
+    
+</view>

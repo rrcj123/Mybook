@@ -1,0 +1,39 @@
+<!--logs.wxml-->
+
+<view class="containert">
+  <view class="header">
+    <view class="city">
+      <text>北京 </text>
+      <image src="../../imgs/xiala.png"></image>
+    </view>
+    <text>本市有{{ac_list.length}}个活动正在火热报名</text>
+  </view>
+  <view wx:for="{{ac_list}}" wx:key="pid" bindtap="chanjia" data-pid='{{item.pid}}'>
+    <view class="activityInfo">
+        <view class="activityFace">
+            <image src="{{appurl}}{{item.activity_url}}" mode="scaleToFill"></image>
+            <text class="activityTitle">{{item.p_title}}</text>
+        </view>
+        <view class="addressTime">
+            <view class="activityAddress">
+                <image src="../../imgs/dizhi.png"></image>
+                <text>{{item.p_address}}</text> 
+            </view>
+            <view class="activityTime">
+                <image src="../../imgs/shijian.png"></image>
+                <text>{{item.p_time}}</text> 
+            </view>
+            <view class="joinPeople">
+                <view class="peopleAvatar">
+                    <image src="../../imgs/0.jpeg" mode="scaleToFill"></image>
+                    <image src="../../imgs/0.jpeg" mode="scaleToFill"></image>
+                    <image src="../../imgs/0.jpeg" mode="scaleToFill"></image>
+                    <image src="../../imgs/0.jpeg" mode="scaleToFill"></image>
+                    <image src="../../imgs/0.jpeg" mode="scaleToFill"></image>
+                </view>
+                <text>等47人已报名参加</text>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>

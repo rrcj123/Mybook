@@ -1,0 +1,33 @@
+/* pages/activitydtl/activitydtl.wxss */
+.activityIntro{
+    padding: 20rpx 30rpx;   
+}
+.activityIntroTitle{
+    font-size: 38rpx;
+    margin-bottom: 10rpx;
+    color: #000;
+}
+.introContent{
+    font-size: 28rpx;
+    color: #919191;
+    line-height: 35rpx;
+    margin: 20rpx 0;
+}
+.joinBtn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 98rpx;
+    width: 100%;
+    line-height: 98rpx;
+    font-size: 34rpx;
+    background: #1cb87b;
+    color: #fff;
+}
+.title{
+  text-align: center;
+  padding: 20rpx;
+  font-size: 30px;
+  border-bottom: 1rpx solid #919191;
+  margin-bottom: 10rpx;
+}

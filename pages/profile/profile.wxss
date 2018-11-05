@@ -1,0 +1,34 @@
+/* pages/profile/profile.wxss */
+/* 登录 */
+.loback{width: 375px;height: 555px;}
+.login{margin-top: 230px;margin-left: 130px; width: 120px;float: left;font-size: 18px;background:#d8b267;color: #fff;line-height: 84rpx;margin-right: 20rpx;border-radius: 100rpx;}
+.mi_top{padding: 30rpx 24rpx;}
+.mi_top .fl image{width: 110rpx;height: 110rpx;float: left;border-radius: 50%;margin-right: 20rpx;}
+.mi_top .fl{font-size: 24rpx;color: #323232;line-height: 110rpx;}
+.mi_top .fr{font-size: 24rpx;color: #999999;line-height: 42rpx;padding: 11rpx 40rpx 0 0;}
+.mi_top .fr image{display: block;width: 54rpx;height: 50rpx;margin: 0 auto}
+.hui{height: 20rpx;background: #eaeaea}
+
+.bt{padding: 0 24rpx;font-size: 20px;color: #323232;line-height: 90rpx;}
+.liu{padding: 0 24rpx;font-size: 30rpx;color: #323232;line-height: 90rpx;border-bottom: 1rpx solid #e1e1e1;display: block;background-size: auto 30rpx;}
+.url{display: block;background-size: auto 30rpx;font-size: 24rpx;color: #646464;line-height: 100rpx;border-top: 1rpx solid #e1e1e1;padding: 0 24rpx;}
+.kong{
+  height: 100rpx;
+}
+.phone{
+  font-size: 15px;
+  padding: 0 24rpx;
+  line-height:45rpx
+}
+.genghuan{
+  font-size: 10px;
+  color: red;
+}
+.comfirmSign{
+    width: 90%;
+    background: #0b9fff;
+    margin-top: 115rpx;
+    height: 88rpx;
+    color: #fff;
+    font-size: 34rpx;
+}

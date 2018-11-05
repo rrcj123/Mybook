@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+    <image src="../../imgs/loginBg.png" class="bg"></image>
+    <view class="logo text-center">
+        <image src="../../imgs/logo.png"></image>
+        <text class="appName block">书是人类进步的阶梯</text>
+    </view>
+    <view class="loginForm">
+        <input class="mobile" placeholder="请输入您的真实姓名" placeholder-style="color:#000000" bindinput="getName" />
+    </view>
+    <view class="loginForm">
+        <input class="mobile" placeholder="请输入您的手机号" placeholder-style="color:#000000" bindinput="getPhone" />
+        <button class="login" bindtap="fetchCode">绑定</button>
+    </view>
+</view>

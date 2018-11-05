@@ -1,0 +1,15 @@
+<!--pages/activitydtl/activitydtl.wxml-->
+<view class="activityIntro">
+  <view class='title'>{{introduce.p_title}}</view>
+    <text class="activityIntroTitle">活动时间:</text>
+    <view class="introContent">{{introduce.p_time}}</view>
+    <text class="activityIntroTitle">负责人联系方式:</text>
+    <view class="introContent">{{introduce.p_phone}}</view>
+    <text class="activityIntroTitle">活动地址:</text>
+    <view class="introContent">{{introduce.p_address}}</view>
+    <text class="activityIntroTitle">活动介绍:</text>
+    <view class="introContent">{{introduce.p_introduce}}</view>
+</view>
+<view class="joinBtn text-center">
+    <navigator url="../sign/sign?pid={{introduce.pid}}" open-type="navigate">我要参加</navigator>  
+</view>

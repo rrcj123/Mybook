@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/sign/sign",
+    "pages/profile/profile",
+    "pages/login/login",
+    "pages/search/search",
+    "pages/bookstore/bookstore",
+    "pages/bookdetail/bookdetail",
+    "pages/activity/activity",
+    "pages/activitydtl/activitydtl", 
+    "pages/signresult/signresult"
+    
+    
+  ],
+  "tabBar": {
+    "color": "#919191",
+    "selectedColor": "#0b9fff",
+    "list": [
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人",
+        "iconPath": "imgs/profileh.png",
+        "selectedIconPath": "imgs/profilehl.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "书柜",
+        "iconPath": "imgs/tijianhui.png",
+        "selectedIconPath": "imgs/tijianhl.png"
+      }, 
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/homehui.png",
+        "selectedIconPath": "imgs/homehl.png"
+      },
+      {
+        "pagePath": "pages/bookstore/bookstore",
+        "text": "收藏",
+        "iconPath": "imgs/shufanghui.png",
+        "selectedIconPath": "imgs/shufanghl.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "imgs/huodonghui.png",
+        "selectedIconPath": "imgs/huodonghl.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "智慧书房",
+    "navigationBarTextStyle": "#fff"
+  }
+}

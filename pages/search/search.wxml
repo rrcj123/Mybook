@@ -1,0 +1,20 @@
+<!--pages/search/search.wxml-->
+
+<view class='box'>
+  <view class='left'>
+    <text wx:for="{{bookClass}}" class='{{cid==item.cid?"active tltle":"tltle"}}' wx:key="cid" bindtap="onBookCid" data-cid='{{item.cid}}'>{{item.bookclass_name}}</text>
+  </view>
+  <view class='right'>
+    <view class="bookItem text-center" wx:for="{{bookList}}" wx:key="bid">
+      <view class="groupImg" bindtap="onbookdetail" data-bid='{{item.bid}}'>
+        <view class="inline-block imgBox">
+          <image src="{{appurl}}{{item.cover_url}}" mode='aspectFill'></image>
+        </view>
+      </view>
+      <text class='bookTitle'>{{item.book_name}}</text>
+    </view>
+  </view>
+</view>
+<view class='{{last?"last":"yin"}}'>下拉加载更多</view>
+<view class='{{last?"yin":"last"}}'>没有更多了</view>
+<image class='tupian' src="{{appurl}}{{tupian}}"></image>

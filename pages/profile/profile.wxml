@@ -1,0 +1,38 @@
+<!--pages/profile/profile.wxml-->
+ <view wx:if="{{!flag}}" class='loback'>
+    <button  class="comfirmSign" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">一 键 登 录</button>
+  </view>
+  <view  wx:else>
+<view class="mi_top">
+  <view>
+    <navigator url='/pages/data/data' class='fl'>
+      <image src='{{avatar}}' class='avatar'></image>
+      {{names}}
+    </navigator>
+    
+  </view>
+</view>
+<view class='kong'></view>
+<!-- 基本资料 -->
+<view class='bt'>基本资料</view>
+<view wx:if="{{phone}}">
+  <view class='bt phone'>真实姓名</view>
+  <view class='bt phone'>{{name}}</view>
+  <view class='kong'></view>
+  <view class='bt phone'>绑定手机号</view>
+  <view class='bt phone'>{{phone}}</view>
+  <navigator url='/pages/login/login' class='bt phone genghuan'>手机号不能用了?</navigator>
+</view>
+<view wx:else>
+  <view class='bt phone'>未填写真实姓名</view>
+  <navigator url='/pages/login/login' class='bt phone genghuan'>去完善?</navigator>
+  <view class='bt phone'></view>
+  <view class='kong'></view>
+  <view class='bt phone'>未绑定手机号</view> 
+  <navigator url='/pages/login/login' class='bt phone genghuan'>去绑定?</navigator>
+</view>
+<view class='kong'></view>
+
+
+<button form-type='submit' class='comfirmSign' bindtap='signout'>退出登录</button>
+</view>

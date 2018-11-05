@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="bookClass">
+    <!--分组-->
+    <view class="bookItem text-center" wx:for="{{bookList}}" wx:key="bid" id="{{item.bid}}">
+      <view class="groupImg">
+        <view class="inline-block imgBox">
+          <image src="{{appurl}}{{item.cover_url}}" bindtap="xiangqin" data-bid='{{item.bid}}' bindlongpress="handleLongPress"></image>
+          <view class='shanchu' wx:if="{{shanchu}}" bindtap="shanchu" data-bid='{{item.bid}}' data-index='{{index}}'></view>
+        </view>
+      </view>
+      <text class='bookTitle'>{{item.book_name}}</text>
+    </view>
+  </view>
+  <!--删除书本-->
+  <view class='handleBook text-center' wx:if="{{shanchu}}">
+    <view class='handleOption cancelBook' bindtap="quxiaoshanchu">
+      <text>完成</text>
+    </view>
+  </view>
+</view>
