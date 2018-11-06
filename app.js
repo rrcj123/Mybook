@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function (e) {
-    this.url = 'http://127.0.0.1:5050';
+    this.url = 'https://book.rrcj123.com';
     this.phone = '';
     this.name = '';
     this.flag = false;

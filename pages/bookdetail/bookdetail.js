@@ -1,7 +1,6 @@
 // pages/bookdetail/bookdetail.js
 Page({
   data:{
-    appurl: "",
     bookDetail:[],
     shoucang:0
   },
@@ -12,7 +11,6 @@ Page({
       method:"GET",
       success:(res)=>{
         this.setData({
-          appurl:getApp().url,
           bookDetail: res.data.msg,
           shoucang: res.data.msg.shoucang  
         })

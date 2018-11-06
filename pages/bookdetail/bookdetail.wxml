@@ -1,12 +1,12 @@
 <!--pages/bookdetail/bookdetail.wxml-->
 <view class="baseInfo">
     <view class="bookImg">
-        <image src="{{appurl}}{{bookDetail.cover_url}}"></image>
+        <image src="{{bookDetail.cover_url}}"></image>
     </view>
     <view class="nameAuthor">
         <text class="bookName">书名:{{bookDetail.book_name}}</text>
         <text class="bookAuthor block">作者:{{bookDetail.username}}</text>
-        <image class='shoucang' bindtap="onshoucang" src="{{shoucang==0?'../../imgs/xiaoxinxinh.png':'../../imgs/xiaoxinxinhr.png'}}"></image>
+        <image class='shoucang' bindtap="onshoucang" src="{{shoucang==0?'https://img.rrcj123.com/book/imgs/xiaoxinxinh.png':'https://img.rrcj123.com/book/imgs/xiaoxinxinhr.png'}}"></image>
         <text class='shoucang'>收藏</text>
     </view>
 </view>

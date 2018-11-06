@@ -1,8 +1,8 @@
 <!--pages/login/login.wxml-->
 <view class="container">
-    <image src="../../imgs/loginBg.png" class="bg"></image>
+    <image src="https://img.rrcj123.com/book/imgs/loginBg.png" class="bg"></image>
     <view class="logo text-center">
-        <image src="../../imgs/logo.png"></image>
+        <image src="https://img.rrcj123.com/book/imgs/logo.png"></image>
         <text class="appName block">书是人类进步的阶梯</text>
     </view>
     <view class="loginForm">

@@ -5,10 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    appurl: getApp().url,
     bookclass:[],
-    lunbo:[],
-    
+    lunbo:[], 
   },
 
   /**

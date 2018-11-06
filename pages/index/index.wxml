@@ -3,7 +3,7 @@
 <view class='slider'>
   <swiper autoplay interval='3000' indicator-dots='{{true}}'>
     <swiper-item wx:for="{{lunbo}}" wx:key="lid">
-      <image src='{{appurl}}{{item.lunbo_url}}' mode='aspectFill'></image>
+      <image src='{{item.lunbo_url}}' mode='aspectFill'></image>
     </swiper-item>
   </swiper>
 </view>
@@ -11,7 +11,7 @@
 <view class='fenlei'>图书分类</view>
 <view class='index-nav'>
   <view class="nav-item" wx:for="{{bookclass}}" wx:key="cid" bindtap="onBookCid" data-cid='{{item.cid}}'>
-    <image src='{{appurl}}{{item.cover_url}}'></image>
+    <image src='{{item.cover_url}}'></image>
     <text>{{item.bookclass_name}}</text>
   </view>
 </view>

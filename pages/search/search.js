@@ -7,13 +7,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    appurl: "",
     bookClass:[],
     bookList:[],
     cid:"",
     last:true,
     pageCount:0, 
-    tupian:""
   },
 
   /**
@@ -26,10 +24,7 @@ Page({
       method: "GET",
       success: (res) => {
         this.setData({
-          bookClass: res.data.msg,
-          appurl: getApp().url,
-          tupian: res.data.msg[cid].cover_url
-          
+          bookClass: res.data.msg
         })
       },
     })
@@ -46,7 +41,7 @@ Page({
           bookList: _this.data.bookList.concat(res.data.msg.data),
           cid:cid,
           pageCount: res.data.msg.pageCount,
-          tupian: this.data.bookClass[cid-1].cover_url
+          
         })
       },
     })

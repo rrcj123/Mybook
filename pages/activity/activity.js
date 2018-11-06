@@ -4,7 +4,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    appurl: "",
     ac_list:[]
   },
   chanjia:function(e){
@@ -22,7 +21,6 @@ Page({
       success: (res) => {
         this.setData({
           ac_list: res.data.msg,
-          appurl: getApp().url
         })
       },
     })

@@ -1,7 +1,6 @@
 // pages/bookstore/bookstore.js
 Page({
   data: {
-    appurl: "",
     bookList: [],
     shanchu:false,
   },
@@ -11,7 +10,6 @@ Page({
       method: "GET",
       success: (res) => {
         this.setData({
-          appurl: getApp().url,
           bookList: res.data.msg,
           shanchu:false,
         })

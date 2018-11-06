@@ -4,15 +4,16 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wx1aab9c9e709a0bdf",
+	"appid": "wx3de768b4857d11fc",
 	"projectname": "MyBook",
 	"debugOptions": {
 		"hidedInDevtools": []
